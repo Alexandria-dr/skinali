@@ -74,14 +74,37 @@
             <div class="header__main__title">
               <p>Гарантия минимальной цены на скинали</p>
               <p>От 3 000 р/м</p>
-              <a class="btn_full btn_header" href="#">Заказать скинали</a>
+              <a class="btn_header" href="#">Заказать скинали</a>
             </div>
             <div class="header__main__img">
               <img src="./img/header.webp" alt="kitchen" />
             </div>
           </div>
-          <div class="header__form">
-            <form class="form__sale" action="sale"></form>
+          <div class="header__form__container">
+            <div class="header__form">
+              <h3>Оставьте заявку на расчет</h3>
+              <p>
+                И получите скидку 30% на изготовление скинали или фартука для
+                кухни
+              </p>
+              <form class="form__sale" action="sale">
+                <div>
+                  <label for="typeOfGlass">
+                    Вид стекла<br />
+                    <select name="typeOfGlass" id="typeOfGlass">
+                      <option value="print">C печатью</option>
+                      <option value="noPrint">Без печати</option>
+                    </select>
+                  </label>
+                </div>
+                <div>
+                  <label for="width">
+                    Ширина, см <br />
+                    <input name="width" type="text" />
+                  </label>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </header>
