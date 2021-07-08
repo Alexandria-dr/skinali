@@ -37,3 +37,10 @@ if (menuLinks.length > 0) {
     }
   }
 }
+
+const likeButton = document.querySelectorAll(".like")
+
+likeButton.forEach(element => {
+element.addEventListener("click", ()=>{
+    element.classList.toggle("active")
+})})
