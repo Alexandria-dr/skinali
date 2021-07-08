@@ -16,6 +16,34 @@
       }
     }
   }
+  .header__form {
+    z-index: 4;
+  }
+  .form__sale {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: 1fr;
+    align-items: center;
+    font-weight: 300;
+    row-gap: 10px;
+    column-gap: 10px;
+
+    .header__form_checkbox {
+      padding-left: 15px;
+      padding-top: 15px;
+    }
+    :nth-child(5) {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+    :nth-child(6) {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+    :nth-child(7) {
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -127,7 +155,61 @@
   .header__main__img {
     display: none;
   }
+  .form__sale {
+    grid-template-columns: minmax(220px, 500px);
+    grid-template-rows: 1fr;
+    align-items: center;
+    font-weight: 300;
+    row-gap: 15px;
+    column-gap: 10px;
+
+    .header__form_checkbox {
+      padding: 10px 0;
+      justify-content: space-around;
+    }
+    :nth-child(5) {
+      grid-column: 1/2;
+      grid-row: 5/6;
+    }
+    :nth-child(6) {
+      grid-column: 1/2;
+      grid-row: 6/7;
+    }
+    :nth-child(7) {
+      grid-column: 1/2;
+      grid-row: 7/8;
+    }
+  }
+  .header__form {
+    padding: 50px 10px;
+    h3,
+    p {
+      padding-left: 0;
+    }
+  }
+  .header__form_checkbox {
+    max-width: 500px;
+    width: 100%;
+  }
+  #typeOfGlass {
+    max-width: 500px;
+    width: 100%;
+  }
+  .form__sale {
+    button {
+      max-width: 500px;
+      width: 100%;
+    }
+    input {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+  .header__form__container {
+    padding-bottom: 0px;
+  }
 }
+
 @media (max-width: 320px) {
   .nav__left-content {
     .nav__logo {

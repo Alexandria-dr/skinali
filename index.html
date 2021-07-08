@@ -88,21 +88,41 @@
                 кухни
               </p>
               <form class="form__sale" action="sale">
-                <div>
-                  <label for="typeOfGlass">
-                    Вид стекла<br />
-                    <select name="typeOfGlass" id="typeOfGlass">
-                      <option value="print">C печатью</option>
-                      <option value="noPrint">Без печати</option>
-                    </select>
-                  </label>
+                <label for="typeOfGlass">
+                  Вид стекла<br />
+                  <select name="typeOfGlass" id="typeOfGlass">
+                    <option value="print">C печатью</option>
+                    <option value="noPrint">Без печати</option>
+                  </select>
+                </label>
+
+                <label for="width">
+                  Ширина, см <br />
+                  <input name="width" type="text" />
+                </label>
+                <label for="height">
+                  Высота, см <br />
+                  <input name="height" type="text" />
+                </label>
+                <div class="header__form_checkbox">
+                  <input
+                    class="custom-checkbox"
+                    type="checkbox"
+                    id="installation"
+                    name="installation"
+                  />
+                  <label for="installation">Монтаж</label>
+                  <input
+                    type="checkbox"
+                    class="custom-checkbox"
+                    id="delivery"
+                    name="delivery"
+                  />
+                  <label for="delivery">Доставка</label>
                 </div>
-                <div>
-                  <label for="width">
-                    Ширина, см <br />
-                    <input name="width" type="text" />
-                  </label>
-                </div>
+                <input type="text" placeholder="Ваше имя" />
+                <input type="text" placeholder="Ваш телефон" />
+                <button type="submit">Получить скидку</button>
               </form>
             </div>
           </div>
