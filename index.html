@@ -14,21 +14,49 @@
           <div class="burger-menu__content">
             <ul class="burger-list">
               <li class="burger-list__main">
-                <a data-goto=".header" href="#">Главная</a>
+                <a class="menu-link" data-goto=".header" href="#"> Главная </a>
               </li>
-              <li><a data-goto=".features" href="#">Преимущества</a></li>
-              <li><a data-goto=".catalog" href="#">Каталог</a></li>
-              <li><a data-goto=".useful" href="#">Полезные статьи</a></li>
-              <li><a data-goto=".price" href="#">Цены и виды</a></li>
-              <li><a data-goto=".stages" href="#">Этапы работ</a></li>
               <li>
-                <a data-goto=".examples" href="#">Выполненные работы</a>
+                <a class="menu-link" data-goto=".features" href="#">
+                  Преимущества
+                </a>
               </li>
-              <li><a data-goto=".review" href="#">Отзывы</a></li>
-              <li><a data-goto=".production" href="#">О производстве</a></li>
+              <li>
+                <a class="menu-link" data-goto=".catalog" href="#"> Каталог </a>
+              </li>
+              <li>
+                <a class="menu-link" data-goto=".useful" href="#">
+                  Полезные статьи
+                </a>
+              </li>
+              <li>
+                <a class="menu-link" data-goto=".price" href="#">
+                  Цены и виды
+                </a>
+              </li>
+              <li>
+                <a class="menu-link" data-goto=".stages" href="#">
+                  Этапы работ
+                </a>
+              </li>
+              <li>
+                <a class="menu-link" data-goto=".examples" href="#">
+                  Выполненные работы
+                </a>
+              </li>
+              <li>
+                <a class="menu-link" data-goto=".review" href="#">Отзывы</a>
+              </li>
+              <li>
+                <a class="menu-link" data-goto=".production" href="#">
+                  О производстве
+                </a>
+              </li>
             </ul>
             <ul class="burger-list">
-              <li class="burger-list__main"><a href="#">Контакты</a></li>
+              <li class="burger-list__main">
+                <a class="menu-link" data-goto=".contact" href="#">Контакты</a>
+              </li>
               <li><a href="tel:+9213439813">+921-343-98-13</a></li>
               <li><a href="tel:+9216549618">+921-654-96-18</a></li>
               <li>Без выходных 9-21</li>
@@ -128,6 +156,67 @@
           </div>
         </div>
       </header>
+      <section class="features">
+        <div class="features__container">
+          <h2>Наши главные преимущества</h2>
+          <div class="features__items">
+            <div class="features__item">
+              <div class="features__item_circle">
+                <img src="./img/computer.svg" alt="Макет" />
+                <p>
+                  Бесплатный <br />
+                  дизайн-макет
+                </p>
+              </div>
+            </div>
+            <div class="features__item">
+              <div class="features__item_circle">
+                <img src="./img/garanty.svg" alt="Гарантия" />
+                <p>
+                  Пожизненная <br />
+                  гарантия
+                </p>
+              </div>
+            </div>
+            <div class="features__item">
+              <div class="features__item_circle">
+                <img src="./img/book.svg" alt="Изображения" />
+                <p>
+                  Большой каталог<br />
+                  изображений
+                </p>
+              </div>
+            </div>
+            <div class="features__item">
+              <div class="features__item_circle">
+                <img src="./img/calendar.svg" alt="Сроки" />
+                <p>
+                  100% соблюдение<br />
+                  сроков
+                </p>
+              </div>
+            </div>
+            <div class="features__item">
+              <div class="features__item_circle">
+                <img src="./img/fabrique.svg" alt="Производство" />
+                <p>
+                  Собственное <br />
+                  производство
+                </p>
+              </div>
+            </div>
+            <div class="features__item">
+              <div class="features__item_circle">
+                <img src="./img/price.svg" alt="Цена" />
+                <p>
+                  Минимальная цена<br />
+                  от 1600р метр
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="./js/script.js"></script>
   </body>

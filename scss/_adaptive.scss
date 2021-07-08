@@ -18,6 +18,7 @@
   }
   .header__form {
     z-index: 4;
+    padding: 60px 40px 60px;
   }
   .form__sale {
     grid-template-columns: repeat(2, 300px);
@@ -25,21 +26,24 @@
     align-items: center;
     font-weight: 300;
     row-gap: 10px;
-    column-gap: 10px;
+    column-gap: 20px;
 
     .header__form_checkbox {
       padding-left: 15px;
       padding-top: 15px;
     }
     :nth-child(5) {
+      margin-top: 15px;
       grid-column: 1/2;
       grid-row: 3/4;
     }
     :nth-child(6) {
+      margin-top: 15px;
       grid-column: 2/3;
       grid-row: 3/4;
     }
     :nth-child(7) {
+      margin-top: 15px;
       grid-column: 2/3;
       grid-row: 4/5;
     }
@@ -208,9 +212,48 @@
   .header__form__container {
     padding-bottom: 0px;
   }
+
+  .features__items {
+    grid-template-columns: repeat(2, minmax(250px, 500px));
+    grid-template-rows: repeat(3, 300px);
+  }
+  .features__item {
+    padding: 15px;
+    &:nth-child(-n + 3),
+    &:nth-child(4) {
+      border-bottom: 2px solid #e0aeae;
+    }
+
+    border-right: none;
+    &:nth-child(2n + 1) {
+      border-right: 2px solid #e0aeae;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .features__items {
+    grid-template-columns: repeat(1, minmax(200px, 500px));
+    grid-template-rows: repeat(6, 300px);
+  }
+  .features__item {
+    padding: 0;
+    border-bottom: 2px solid #e0aeae;
+    &:nth-child(2n + 1) {
+      border-right: none;
+    }
+    &:nth-child(6) {
+      border-bottom: none;
+    }
+  }
+  .features__container {
+    h2 {
+      margin-bottom: 20px;
+    }
+    padding: 0 20px 20px;
+  }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
   .nav__left-content {
     .nav__logo {
       margin: auto 0;
@@ -228,6 +271,20 @@
       font-size: 1.1rem;
       background-color: #189aa3;
       padding: 20px 20px;
+    }
+  }
+  .features__container {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  .features__item_circle {
+    width: 190px;
+    height: 190px;
+    font-size: 1rem;
+    img {
+      width: 80px;
+      height: 80px;
     }
   }
 }
