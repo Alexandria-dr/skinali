@@ -44,3 +44,33 @@ likeButton.forEach(element => {
 element.addEventListener("click", ()=>{
     element.classList.toggle("active")
 })})
+
+const priceItem = document.querySelectorAll(".price__item");
+
+priceItem.forEach(element => {
+  element.addEventListener("mouseenter", ()=>{
+      
+    if(element.getAttribute("data-number") == "first"){
+        let parentEl = element.parentElement;
+        let broEl = parentEl.querySelector(".price__item[data-number=second]");
+        broEl.querySelector(".price__item_img").style.height="160px";
+    } else{
+      let parentEl = element.parentElement;
+        let broEl = parentEl.querySelector(".price__item[data-number=first]");
+        broEl.querySelector(".price__item_img").style.height="160px";
+    };
+  })
+  element.addEventListener("mouseleave", ()=>{
+      
+    if(element.getAttribute("data-number") == "first"){
+        let parentEl = element.parentElement;
+        let broEl = parentEl.querySelector(".price__item[data-number=second]");
+        broEl.querySelector(".price__item_img").style.height="250px";
+    } else{
+      let parentEl = element.parentElement;
+        let broEl = parentEl.querySelector(".price__item[data-number=first]");
+        broEl.querySelector(".price__item_img").style.height="250px";
+    };
+  })
+  
+});

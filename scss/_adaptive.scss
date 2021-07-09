@@ -244,6 +244,9 @@
       border-right: 2px solid #e0aeae;
     }
   }
+  .price__catalog {
+    padding: 10px 0;
+  }
 }
 @media (max-width: 500px) {
   .features__items {
@@ -271,6 +274,9 @@
   }
   .useful__container {
     padding: 40px 10px;
+  }
+  .price__item {
+    width: 280px;
   }
 }
 
@@ -307,5 +313,8 @@
       width: 80px;
       height: 80px;
     }
+  }
+  .price__item {
+    width: 200px;
   }
 }
