@@ -4,8 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <title>Skinali</title>
   </head>
   <body>
     <div class="wrapper">
@@ -565,7 +587,50 @@
           </div>
         </div>
       </section>
+      <section class="examples">
+        <div class="examples__container">
+          <h2>До и после</h2>
+          <div class="swiper-container">
+            <div class="exemples__items swiper-wrapper">
+              <div class="exemple__item swiper-slide">
+                <div class="exemple__img" data-order="before">
+                  <img src="./img/before.webp" alt="before" />
+                  <p>Без скинали</p>
+                </div>
+                <div class="exemple__img" data-order="after">
+                  <img src="./img/after.webp" alt="after" />
+                  <p>Со скинали</p>
+                </div>
+              </div>
+              <div class="exemple__item swiper-slide">
+                <div class="exemple__img" data-order="before">
+                  <img src="./img/before.webp" alt="before" />
+                  <p>Без скинали</p>
+                </div>
+                <div class="exemple__img" data-order="after">
+                  <img src="./img/after.webp" alt="after" />
+                  <p>Со скинали</p>
+                </div>
+              </div>
+              <div class="exemple__item swiper-slide">
+                <div class="exemple__img" data-order="before">
+                  <img src="./img/before.webp" alt="before" />
+                  <p>Без скинали</p>
+                </div>
+                <div class="exemple__img" data-order="after">
+                  <img src="./img/after.webp" alt="after" />
+                  <p>Со скинали</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

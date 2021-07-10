@@ -213,3 +213,48 @@ let _slideToggle = (target, duration = 500) => {
   }
 
 }
+// spoilers end
+
+const exempleItem = document.querySelectorAll(".exemple__img");
+
+exempleItem.forEach(element => {
+  element.addEventListener("mouseenter", ()=>{
+      
+    if(element.getAttribute("data-order") == "before"){
+        let parentEl = element.parentElement;
+        let broEl = parentEl.querySelector(".exemple__img[data-order=after]");
+        broEl.style.width="40%";
+        element.style.width="60%"
+    } else{
+      let parentEl = element.parentElement;
+        let broEl = parentEl.querySelector(".exemple__img[data-order=before]");
+        broEl.style.width="40%";
+        element.style.width="60%"
+    };
+  })
+  element.addEventListener("mouseleave", ()=>{
+      
+    if(element.getAttribute("data-order") == "before"){
+        let parentEl = element.parentElement;
+        let broEl = parentEl.querySelector(".exemple__img[data-order=after]");
+        broEl.style.width="50%";
+        element.style.width="50%"
+    } else{
+      let parentEl = element.parentElement;
+        let broEl = parentEl.querySelector(".exemple__img[data-order=before]");
+        broEl.style.width="50%";
+        element.style.width="50%"
+    };
+  })
+  
+});
+
+const swiper = new Swiper('.swiper-container', {
+ 
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },})

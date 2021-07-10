@@ -1339,6 +1339,112 @@ input:focus {
   margin: 0;
 }
 
+.examples {
+  background-color: white;
+}
+
+.swiper-container {
+  width: 100%;
+  max-width: 1500px;
+  height: 500px;
+}
+
+.examples__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 0px 40px;
+}
+
+.examples__container h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.exemple__item {
+  padding: 50px 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #914646;
+}
+
+.exemple__img {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  cursor: pointer;
+}
+
+.exemple__img img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.exemple__img p {
+  position: absolute;
+  top: 5px;
+  background: #c4c4c4e0;
+  margin: 0;
+  padding: 5px 10px;
+  color: white;
+}
+
+.exemple__img:first-child::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 49, 49, 0.5);
+}
+
+.exemple__img:first-child::after {
+  position: absolute;
+  content: "";
+  right: 0px;
+  top: 0;
+  background-color: white;
+  width: 3px;
+  height: 100%;
+}
+
+.exemple__img:first-child p {
+  left: 5px;
+}
+
+.exemple__img:last-child p {
+  right: 5px;
+}
+
+.exemple__img:last-child::after {
+  position: absolute;
+  content: "";
+  left: -19px;
+  top: 40%;
+  background: url(../img/beforeafter.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
 @media (max-width: 1200px) {
   nav {
     font-size: 1.1rem;
