@@ -227,7 +227,7 @@ if (mm.matches) {
       if(element.getAttribute("data-order") == "before"){
           let parentEl = element.parentElement;
           let broEl = parentEl.querySelector(".exemple__img[data-order=after]");
-          broEl.style.param="40%";
+          broEl.style.width="40%";
           element.style.width="60%"
       } else{
         let parentEl = element.parentElement;
