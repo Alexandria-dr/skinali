@@ -217,7 +217,6 @@ let _slideToggle = (target, duration = 500) => {
 
 
 const mm = window.matchMedia("(min-width: 768px)");
-console.log(mm);
 
 const exempleItem = document.querySelectorAll(".exemple__img");
 if (mm.matches) {
