@@ -615,7 +615,7 @@ button.btn_submit:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px 60px;
+  padding: 30px 20px 60px;
 }
 
 .features__container h2 {
@@ -698,11 +698,11 @@ button.btn_submit:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px 30px;
+  padding: 30px 10px 30px;
 }
 
 .catalog__items {
-  margin: 20px auto;
+  margin: 50px auto 20px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(400px, 600px))[2];
@@ -1004,6 +1004,7 @@ button.btn_submit:hover {
 
 .price__container h2 {
   margin-top: 10px;
+  margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1782,6 +1783,172 @@ h2 {
   color: #09306b;
 }
 
+footer {
+  background-color: #242424;
+}
+
+.footer__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  padding: 40px 20px 30px;
+}
+
+.footer__container p {
+  margin: 0;
+}
+
+.footer__pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 20px;
+}
+
+.footer__pay_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  max-height: 70px;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.footer__pay_item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__pay_item:hover {
+  background-color: rgba(0, 204, 255, 0.555);
+}
+
+.footer__pay_item img {
+  -o-object-position: center;
+     object-position: center;
+  max-width: 90px;
+  width: 100%;
+  height: auto;
+}
+
+.footer__logo {
+  margin: 20px;
+}
+
+.footer__logo .p_copyright {
+  color: #ffffff6e;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.footer__logo .p_copyright::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: -2px;
+  background: url(../img/copyright.svg) no-repeat;
+}
+
+.footer__logo_name {
+  color: white;
+  font-weight: 500;
+}
+
+.footer__logo_name h3 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0 0 10px;
+}
+
+.footer__logo_name p {
+  font-size: 1.1rem;
+}
+
+.footer__contact {
+  margin: 20px;
+}
+
+.footer__contact a {
+  color: white;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.footer__contact a:hover {
+  color: rgba(0, 204, 255, 0.8);
+}
+
+.footer__contact p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer__contact p:first-child {
+  font-size: 1.7rem;
+}
+
+.footer__contact p:nth-child(2) {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.footer__contact_social {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__contact_social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.footer__contact_social a:hover {
+  background-color: rgba(0, 204, 255, 0.555);
+}
+
+.footer__contact_social a img {
+  width: 34px;
+  height: 34px;
+}
+
 @media (max-width: 1200px) {
   nav {
     font-size: 1.1rem;
@@ -2136,6 +2303,9 @@ h2 {
   .form-sale__btn p {
     padding: 0;
   }
+  .footer__pay {
+    margin: 20px 0;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2156,7 +2326,7 @@ h2 {
     border-bottom: none;
   }
   .features__container {
-    padding: 0 20px 20px;
+    padding: 20px 20px;
   }
   .features__container h2 {
     margin-bottom: 20px;
