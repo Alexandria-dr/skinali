@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 const navButton = document.querySelector(".nav__burger-button");
 const burgerMenu = document.querySelector(".nav__burger-menu")
 
@@ -264,3 +266,26 @@ const swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },})
+
+const formGsap = document.querySelectorAll('[data-gsap-form]')
+
+// ScrollTrigger.defaults({
+//  markers:true
+// })
+
+function hide(element) {
+  gsap.set(element, { opacity: 0});
+}
+
+formGsap.forEach(function (element) {
+  hide(element);
+  ScrollTrigger.create({
+    start: "top bottom-=100",
+    end: "bottom top",
+    trigger: element,
+    onEnter: function () {
+      gsap.fromTo(element, { opacity: 0, y:200 }, { opacity: 1, y:0, duration: 1 });
+    },
+    onLeaveBack: (self) => self.disable(),
+  });
+});

@@ -1198,6 +1198,7 @@ button.btn_submit:hover {
 
 .stages__container h2 {
   color: #000000c0;
+  margin-bottom: 20px;
 }
 
 .stages__content {
